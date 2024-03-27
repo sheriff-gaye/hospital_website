@@ -126,6 +126,9 @@ nav {
   z-index: 11;
   box-shadow: 0 2px 4px rgba(0.1, 0.1, 0.1, 0.1);
 }
+nav a.active {
+  color: #ff0000; 
+}
 
 .nav_container {
   height: 100%;
@@ -363,6 +366,10 @@ section#companies {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
 }
+.course :hover .btn-primary{
+  background-color: var(--color-secondary);
+  color: white;
+}
 
 .course_info {
   padding: 2rem;
@@ -371,10 +378,7 @@ section#companies {
   color: var(--color-white);
 }
 
-.course:hover .btn-primary {
-  background: var(--color-bg1);
-  color: var(--color-white);
-}
+
 .course_info p {
   font-size: 0.9rem;
   padding: 1.2rem 0 2rem;
@@ -406,7 +410,7 @@ section#companies {
   align-items: center;
   gap: 1.4rem;
   height: fit-content;
-  background: var(--color-bg1);
+  background:  rgb(227, 77, 77);
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -432,9 +436,11 @@ section#companies {
   overflow-x: hidden;
   position: relative;
   margin-bottom: 5rem;
+ 
 }
 .testimonial {
   padding-top: 2rem;
+ 
  
 }
 .avater {
@@ -447,6 +453,8 @@ section#companies {
 }
 .testimonial_info {
   text-align: center;
+ 
+ 
 }
 .testimonial_body {
   padding: 2rem;
@@ -455,6 +463,9 @@ section#companies {
   position: relative;
   color: var(--color-white);
   border-radius: 1rem;
+  margin: 0 auto;
+  width: 38%;
+  
 }
 
 .testimonial_body::before {
@@ -482,7 +493,7 @@ section#cta .container {
 }
 
 section#cta .container .info {
-  width: 26rem;
+  width: 24rem;
 }
 
 section#cta .container .info h3 {
@@ -497,17 +508,46 @@ section#cta .container .info p {
 
 section#cta .image {
   position: absolute;
-  top: -16rem;
-  /*it was -4 */
-  right: 20%;
-  /*it was 35 */
+  top: 1rem;
+  right: 10%;
+ 
 }
 
-section#cta .container .btn {
-  align-self: flex-end;
-  background: var(--color-black);
-  color: var(--color-white);
+
+
+/* newsletter style starts here */
+
+.newsletter_container {
+  margin-top: 10rem;
+  background-color: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  height: fit-content;
+  position: relative;
+  color: white;
 }
+
+.newsletter_container form{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.newsletter_container form input{
+  color: black;
+}
+
+.newsletter_container button{
+  width: fit-content;
+}
+
+
+
+/* newsletter style ends here */
 
 footer {
   background: var(--color-bg1);
@@ -688,13 +728,23 @@ footer .copyright {
 
   section#cta .container .image {
     position: absolute;
-    right: 1rem;
-    top: -15.5rem;
+    right:1rem;
+    top: 1rem;
   }
 
   section#cta .container .btn {
     z-index: 1;
   }
+
+
+  .newsletter_container {
+    gap: 2rem;
+  }
+  .newsletter_container .form {
+    flex-direction: column;
+  }
+
+  
   .footer_container {
     grid-template-columns: 1fr 1fr;
   }
@@ -776,9 +826,24 @@ footer .copyright {
   section#cta .container .image {
     position: relative;
     top: 0.2rem;
-    /*it was 2rem */
     right: 5%;
-    /* it was 30% 8*/
+   
+  }
+
+  .newsletter_container {
+    grid-template-columns:  1fr;
+    padding: 2rem;
+
+  }
+  
+  .newsletter_container form{
+    flex-direction: column;
+  }
+
+
+  .testimonial_body {
+    width: 80%;
+    
   }
   .footer_container {
     grid-template-columns: 1fr;

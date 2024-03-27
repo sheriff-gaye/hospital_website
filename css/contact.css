@@ -14,12 +14,9 @@
     border-radius: 1rem;
     padding: 3rem;
     position: relative;
-    bottom: 10rem;
+    bottom: 3rem;
 }
-.aside_image{
-    width: 12rem;
-    margin-bottom: 2rem;
-}
+
 .contact_aside h2{
     text-align: left;
     margin-bottom: 1rem;

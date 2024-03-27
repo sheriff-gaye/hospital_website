@@ -69,3 +69,31 @@ closeBtn.addEventListener('click', () => {
     closeBtn.style.display = "none"
 
 })
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all the anchor links in the navigation
+    const navLinks = document.querySelectorAll('nav a');
+    
+    // Add click event listener to each anchor link
+    navLinks.forEach(link => {
+      link.addEventListener('click', smoothScroll);
+    });
+    
+    // Function to handle smooth scrolling
+    function smoothScroll(e) {
+      e.preventDefault(); // Prevent default behavior of anchor tag
+      
+      const targetId = this.getAttribute('href'); // Get the target section id
+      
+      // Scroll smoothly to the target section
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start' // Adjust as needed ('start', 'center', 'end', or 'nearest')
+      });
+    }
+  });
+  

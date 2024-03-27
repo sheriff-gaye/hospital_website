@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>School Website</title>
+  <title>Hospital Website</title>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/about.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600&display=swap"
     rel="stylesheet" />
@@ -21,14 +22,15 @@
   <nav>
     <div class="nav_container container">
       <a href="index.html">
-        <h4>ZEN CARE</h4>
+        <h4><i class="uil uil-heart-medical"></i> ZEN CARE</h4>
       </a>
       <ul class="nav_menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#faqs">Faqs</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact us</a></li>
         <li><a href="#blog">Blog</a></li>
       </ul>
       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
@@ -38,14 +40,14 @@
 
   <!--header starts here-->
   <header>
-    <div class="container header_container">
+    <div class="container header_container" id="header">
       <div class="header_left">
         <h1>Taking care of your<span> <br>health </span> is our top <span>priority</span></h1>
 
         <p>Discover pathways to optimal health and vitality through our comprehensive programs. Embrace wellness and
           unlock a healthier, happier you. Start your journey towards holistic wellness today!</p>
 
-        <a href="courses.html" class="btn btn-secondary">Explore Our Services</a>
+        <a href="#services" class="btn btn-secondary">Explore Our Services</a>
       </div>
       <div class="header_right">
         <div class="header_right-image">
@@ -201,7 +203,7 @@
         <p>
           Discover the transformative journey towards optimal well-being at Wellness Oasis. Navigate your path to
           vitality with confidence as we bridge gaps, promote holistic practices, and guide you towards fulfillment.
-          Embrace nourishing habits, cultivate mindfulness, and prioritize self-care. 
+          Embrace nourishing habits, cultivate mindfulness, and prioritize self-care.
         </p>
         <p>Together, let's create a harmonious balance in mind, body, and spirit. Experience the joy of vibrant health
           as you explore holistic approaches to wellness. Start your empowering journey towards vitality and well-being
@@ -399,7 +401,7 @@
 
 
   <!--students testimonial-->
-  <section class="container testimonail_testimonial swiper  mySwiper" id="testimonials">
+  <section class=" testimonail_testimonial swiper  mySwiper" id="testimonials">
     <h2>Testimonials</h2>
     <div class="swiper-wrapper">
       <article class="testimonial swiper-slide">
@@ -439,6 +441,19 @@
 
         </div>
       </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avater">
+          <img src="./images/sheriff.jpeg" alt="" />
+          <h5>Sheriff Gaye</h5>
+          <small>Students</small>
+        </div>
+        <div class="testimonial_body">
+          <p>Thank you to the hospital staff for their professionalism and kindness. I had a positive experience during
+            my treatment.</p>
+
+        </div>
+      </article>
     </div>
     <br><br>
     <div class="swiper-pagination" />
@@ -446,25 +461,71 @@
   <!--end of testimontal-->
 
 
+  <!--cta starts here-->
   <section id="cta">
     <div class="container">
       <div class="info">
-        <h3>Our Role Extends Beyond Clinical Care - We are Part of the Community as Well</h3>
+        <h3>Our Role Extends Beyond Clinical Care </h3>
 
         <p>Join us in building a healthier community together. Beyond clinical services, we engage actively in community
-          initiatives, promoting wellness education and fostering connections. Together, let's create a supportive
-          environment where everyone can thrive, ensuring holistic well-being for all.</p>
+          initiatives, promoting wellness education and fostering connections.</p>
       </div>
       <div class="image">
-        <img src="./images/pngwing.com (12).png" alt="call_to_action">
+        <img src="./images/pngwing.com (18) (1).png" alt="call_to_action">
       </div>
     </div>
   </section>
   <!--cta ends here-->
 
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="container contact_container">
+      <aside class="contact_aside">
+
+        <h2>Contact Us</h2>
+        <p>Reach out to us for inquiries, support, or collaborations. We're here to assist you every step of the way.
+        </p>
+        <ul class="contact_details">
+          <li>
+            <i class="uil uil-phone-times"></i>
+            <h5>+2330506264676</h5>
+
+          </li>
+          <li>
+            <i class="uil uil-envelope"></i>
+            <h5>example@gmail.com</h5>
+
+          </li>
+          <li>
+            <i class="uil uil-location-point"></i>
+            <h5>Kumasi,KNUST</h5>
+
+          </li>
+        </ul>
+        <ul class="contact_socials">
+          <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+          <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+          <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+          <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
+        </ul>
+      </aside>
 
 
-  <!--our popular courses-->
+      <form action="https://formspree.io/f/xzbwjolj" class="contact_form" method="post">
+
+        <input type="text" name="Firt Name" placeholder="Full Name" required>
+
+        <input type="email" name="email" placeholder="Email" required>
+
+        <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+      </form>
+    </div>
+  </section>
+
+
+  <!--our blog section-->
   <section class="courses" id="blog">
     <h2>Our Latest News and Updates </h2>
     <div class="container courses_container">
@@ -513,7 +574,31 @@
       </article>
     </div>
   </section>
-  <!--end of courses-->
+  <!--end of blog section-->
+
+
+
+
+  <!--newsletter starts here-->
+  <section id="newsletter">
+    <h2> Our Newsletter</h2>
+    <div class="container newsletter_container">
+      <div class="info">
+        <h3>Subscribe to our Newsletter</h3>
+
+        <p>Stay up-to-date with the latest articles, news, and insights from our blog. Subscribe now to receive regular
+          updates directly to your inbox and never miss out on valuable content!</p>
+
+      </div>
+      <div class="form">
+        <form method="post">
+          <input type="email" name="email" placeholder="Email" required>
+          <button class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--newsletter ends here-->
 
 
 
@@ -567,7 +652,7 @@
       </div>
     </div>
     <div class="copyright">
-      <small>Copyright &copy; Gaye Tech</small>
+      <small>Copyright &copy; Gaye Tech< 2024/small>
     </div>
 
 
