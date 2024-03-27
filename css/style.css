@@ -93,9 +93,9 @@ img {
 }
 
 .btn-primary:hover {
-  background: white;
-  color: var(--color-danger);
-  border: 1px solid var(--color-danger);
+  background: var(--color-secondary);
+  color: var(--color-white);
+  transition: var(--transition);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .btn-secondary:hover {
@@ -127,7 +127,7 @@ nav {
   box-shadow: 0 2px 4px rgba(0.1, 0.1, 0.1, 0.1);
 }
 nav a.active {
-  color: #ff0000; 
+  text-decoration: underline;
 }
 
 .nav_container {
@@ -493,7 +493,7 @@ section#cta .container {
 }
 
 section#cta .container .info {
-  width: 24rem;
+  width: 50rem;
 }
 
 section#cta .container .info h3 {
@@ -514,18 +514,17 @@ section#cta .image {
 }
 
 
-
 /* newsletter style starts here */
 
 .newsletter_container {
   margin-top: 10rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap:2rem;
   justify-content: center;
   align-items: center;
-  padding: 3rem 3rem;
+  padding: 5rem 3rem;
   border-radius: 2rem;
   height: fit-content;
   position: relative;

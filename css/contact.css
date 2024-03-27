@@ -31,13 +31,17 @@
     align-items: center;
     margin-bottom: 1rem;
 }
+.contact_details li h5{
+    font-weight: normal;
+}
+
 .contact_socials{
     display: flex;
     gap: 0.8rem;
     margin-top: 3rem;
 }
 .contact_socials a{
-    background-color: var(--color-bg2);
+    background-color: rgb(227, 77, 77);
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 0.9rem;
