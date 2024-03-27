@@ -482,7 +482,7 @@ section#companies {
 
 section#cta .container {
   margin-top: 10rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;

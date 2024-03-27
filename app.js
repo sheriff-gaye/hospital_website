@@ -76,7 +76,7 @@ closeBtn.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Get all the anchor links in the navigation
-    const navLinks = document.querySelectorAll('nav a');
+    const navLinks = document.querySelectorAll('.nav_menu  a');
     
     // Add click event listener to each anchor link
     navLinks.forEach(link => {
