@@ -71,6 +71,12 @@ closeBtn.addEventListener('click', () => {
 })
 
 
+if (window.innerWidth < 1024) {
+    document.querySelectorAll('.nav_menu li a').forEach(navitem => {
+      navitem.addEventListener('click', closeNav)
+    })
+  }
+  
 
 
 
